@@ -1,0 +1,27 @@
+/escola
+
+POST /novaescola
+    requisição esperada
+        {
+            nome: STRING,
+            diretor: {
+                id: int
+            },
+            telefone: STRING,
+            endereco: {
+                cep: STRING,
+                cidade: STRING,
+                estado: STRING,
+                pais: STRING
+            }
+        }
+    retorno
+        {
+            status: STRING // mensagem retornando se foi inserido e caso não, o motivo por nao inserir
+        }
+
+GET /
+    retorno: lista de escolas
+
+GET /id
+    retorno: escola com id igual ao solicitado

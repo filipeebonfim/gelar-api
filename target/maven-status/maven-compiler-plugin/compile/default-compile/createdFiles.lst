@@ -1,0 +1,9 @@
+com/gelarapi/model/Usuario.class
+com/gelarapi/model/Endereco.class
+com/gelarapi/model/Administrador.class
+com/gelarapi/model/Escola.class
+com/gelarapi/GelarApiApplication.class
+com/gelarapi/model/Aluno.class
+com/gelarapi/controller/EscolaController.class
+com/gelarapi/model/BaseModel.class
+com/gelarapi/model/Professor.class

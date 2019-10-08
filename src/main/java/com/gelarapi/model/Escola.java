@@ -1,10 +1,6 @@
 package com.gelarapi.model;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-import org.hibernate.annotations.SQLDelete;
-import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 
@@ -23,7 +19,7 @@ public class Escola extends BaseModel {
     private String nome;
 
     @Column
-    private String teste;
+    private String telefone;
 
     @OneToOne
     @JoinColumn(name = "idDiretor")
@@ -41,12 +37,12 @@ public class Escola extends BaseModel {
         this.nome = nome;
     }
 
-    public String getTeste() {
-        return teste;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setTeste(String teste) {
-        this.teste = teste;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public Administrador getDiretor() {

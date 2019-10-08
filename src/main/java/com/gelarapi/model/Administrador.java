@@ -12,11 +12,11 @@ public class Administrador extends Usuario {
     @Column
     private Boolean isDiretor;
 
-    public Boolean getDiretor() {
+    public Boolean getIsDiretor() {
         return isDiretor;
     }
 
-    public void setDiretor(Boolean diretor) {
+    public void setIsDiretor(Boolean diretor) {
         isDiretor = diretor;
     }
 }

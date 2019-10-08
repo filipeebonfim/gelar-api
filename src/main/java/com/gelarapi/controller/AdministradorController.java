@@ -9,10 +9,7 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/administrador")
@@ -44,5 +41,11 @@ public class AdministradorController {
         json.put("statusMsg", retMsg.toString());
 
         return new ResponseEntity<>(json, ok == true ? HttpStatus.CREATED : HttpStatus.OK);
+    }
+
+    @GetMapping
+    public ResponseEntity<?> getEscolas(){
+        System.out.println("Procurando escolas");
+        return new ResponseEntity<>(admDAO.findAll(), HttpStatus.OK);
     }
 }

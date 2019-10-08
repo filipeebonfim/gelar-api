@@ -25,3 +25,20 @@ GET /
 
 GET /id
     retorno: escola com id igual ao solicitado
+
+/administrador
+
+POST /novoadm
+    {
+    	"nome":"Diretor1",
+    	"login":"d1",
+    	"senha":"d1",
+    	"telefone":"0293010",
+    	"celular":"998982",
+    	"cpf":"4646464466",
+    	"email":"filindo@gmail.com",
+    	"isDiretor":true
+    }
+
+GET /
+    retorna lista de administradores (diretores e nao diretore) TODO: metodo que traz só diretores

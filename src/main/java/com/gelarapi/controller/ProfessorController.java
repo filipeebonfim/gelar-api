@@ -2,6 +2,7 @@ package com.gelarapi.controller;
 
 import com.gelarapi.model.Professor;
 import org.json.JSONObject;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,5 +18,8 @@ public class ProfessorController {
         JSONObject json = new JSONObject();
         boolean ok = true;
         StringBuilder retMsg = new StringBuilder();
+
+        return new ResponseEntity<>(json, HttpStatus.OK);
+
     }
 }

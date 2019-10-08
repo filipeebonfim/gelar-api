@@ -60,7 +60,7 @@ public class EscolaController {
             retMsg.append("Escola inserida");
         }
 
-        json.put("status", retMsg.toString());
+        json.put("statusMsg", retMsg.toString());
         return new ResponseEntity<>(json, HttpStatus.OK);
     }
 
